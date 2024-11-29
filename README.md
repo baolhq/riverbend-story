@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# Riverbend Story
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An atmospheric text-based game inspired by A Dark Room. In Riverbend Story, you embark on a mysterious journey through an eerie, desolate world. With minimalistic gameplay and a focus on storytelling, you'll uncover secrets, face challenges, and build a narrative shaped by your choices.
 
-Currently, two official plugins are available:
+### Features
+- Immersive Storytelling: Dive into a rich narrative that evolves with every decision.
+- Exploration: Uncover the mysteries of the Riverbend and its strange inhabitants.
+- Minimalist Interface: Simple, text-focused design for pure immersion.
+- Strategic Gameplay: Manage resources, make critical decisions, and survive in a harsh environment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Getting Started
+##### Prerequisites
+- Node.js (v16 or higher)
+##### Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/riverbend-story.git
+cd riverbend-story
+```
+2. Install dependencies:
+```bash
+npm install
+```
+3. Start the development server:
+```bash
+npm run dev
+```
+4. Open your browser and visit:
+```bash
+http://localhost:5173
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Contributing
+Contributions are welcome! If you'd like to contribute:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+1. Fork the repository.
+2. Create a new branch:
+```bash
+git checkout -b feature/your-feature
 ```
+3. Commit your changes:
+```bash
+git commit -m "Add your feature description"
+```
+4. Push to the branch:
+```bash
+git push origin feature/your-feature
+```
+5. Open a pull request.
+
+For more details, please take a look at our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+### License
+This project is licensed under the [MIT](LICENSE) License.
+
+### Credits
+Inspired by [A Dark Room](https://github.com/doublespeakgames/adarkroom) by Amir Rajan and Michael Townsend.
